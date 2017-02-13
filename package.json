@@ -8,7 +8,7 @@
   "description": "Proof of concept for Irune",
   "main": "index.js",
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp",
     "test": "standard"
   },
   "repository": {

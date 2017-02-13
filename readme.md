@@ -15,13 +15,15 @@ The template is built using the 'everything is a component or utility' school of
 The CSS is created using the stylus preprocessor and uses standard SASS syntax (the docs show python syntax but it's not used here), there are a few minor differences between sass and stylus, they are available to read in the [official stylus documentation](http://stylus-lang.com/).
 
 ### Jeet
-Jeet is used for the grid, it is a classless semantic grid and avoids the horrible bootstrap-like practice of putting classes like .col-lg-12 .col-md-12 .col-sm-12 all over the page. Instead it appears in the css as a fractional width.
+Jeet is used for the grid, it is a classless semantic grid and avoids the horrible bootstrap-like practice of putting classes like `.col-lg-12 .col-md-12 .col-sm-12` all over the page. Instead it appears in the css as a fractional width.
 
 e.g.
 
-`.u-primary-column {
+```
+.u-primary-column {
   col(1/2)
-}`
+}
+```
 
 This specifies that the primary column should span 1/2 the page. [The official documentation is available to read here.](http://jeet.gs)
 
@@ -30,12 +32,14 @@ Rupture is a great way to write media queries, it uses a simplified syntax to ma
 
 e.g.
 
-`.u-primary-column {
+```
+.u-primary-column {
   col(1)
   +above(m) {
     col(1/2)  
   }
-}`
+}
+```
 
 This alters the primary column to say that by default, it spans the full width of the page until it reaches the 'm' breakpoint (specified in a config file) and then after that it changes to a half, column.
 
