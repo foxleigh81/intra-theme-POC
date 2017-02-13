@@ -1,0 +1,53 @@
+{
+  "name": "intra-theme-POC",
+  "version": "1.0.0",
+  "engines": {
+    "node": "4.4.5",
+    "npm": "2.15.5"
+  },
+  "description": "Proof of concept for Irune",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexward1981/intra-theme-POC"
+  },
+  "author": "Alex Ward and Irune Itoiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexward1981/intra-theme-POC/issues"
+  },
+  "homepage": "https://github.com/alexward1981/intra-theme-POC#readme",
+  "dependencies": {
+    "jeet": "^7.1.0",
+    "jquery": "^2.2.0",
+    "gulp": "^3.9.1",
+    "rupture": "^0.6.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "chalk": "^1.1.1",
+    "del": "latest",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "latest",
+    "gulp-csso": "latest",
+    "gulp-eslint": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "node-notifier": "^4.6.1",
+    "standard": "^8.6.0"
+  }
+}
