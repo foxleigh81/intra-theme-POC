@@ -1,0 +1,44 @@
+// For headings and titles
+ff-title() {
+  font-family: 'nta', sans-serif;
+  font-weight: bold;
+}
+
+// For anything using the standard body text style
+ff-body() {
+  font-family: 'nta', sans-serif;
+  font-weight: normal;
+  font-size: $bodyCopy;
+  line-height: $lineHeight*2;
+  margin-bottom: $bodyCopy;
+}
+
+// For a real content list with bullet points
+real-list() {
+  ff-body();
+  margin-left: $spacing*2;
+  li {
+    list-style: disc;
+  }
+}
+
+// For buttons!
+button(bgc) {
+  display: inline-block;
+  color: $light;
+  background-color: bgc;
+  padding: $spacing $spacing*3;
+  border: 0;
+  font-size: $outerCore;
+  cursor: pointer;
+  text-decoration:none;
+  &:hover {
+    color: $light;
+    background-color: lighten(bgc, 20%);
+  }
+  &.disabled {
+    cursor: auto;
+    background: desaturate(bgc, 60%);
+    opacity: .6;
+  }
+}

@@ -9,23 +9,29 @@
   <link rel="stylesheet" href="assets/css/print.min.css" media="print">
   <link rel="canonical" href="http://mojintranet/" />
 </head>
-<body>
+<body class="agency-hq">
   <a class="u-skip-link" href="#maincontent">Skip to main content</a>
   <header class="c-header-container" role="banner">
     <div class="c-logo-bar">
-      <img src="https://intranet.justice.gov.uk/wp-content/themes/mojintranet/assets/images/logos/moj_logo.png" alt="MOJ Logo">
-      <a href="" class="u-right">Switch to other intranet</a>
+      <div class="u-wrapper">
+        <a href="/" rel="home">
+          <img src="https://intranet.justice.gov.uk/wp-content/themes/mojintranet/assets/images/logos/moj_logo.png" alt="MOJ Logo">
+        </a>
+        <a href="" class="c-logo-bar--switch">Switch to other intranet</a>
+      </div>
     </div>
     <div class="c-search-bar">
-      <form action="#search" id="sf">
-        <label for="sf_search" class="u-visually-hidden">Search MoJ Intranet</label>
-        <input type="text" name="sf_search" id="sf_search" value="" placeholder="Search MoJ Intranet">
-        <button type="submit">Go</button>
+      <form action="#search" id="sf" class="u-wrapper">
+        <div class="c-search-bar--container">
+          <label for="sf_search" class="u-visually-hidden">Search MoJ Intranet</label>
+          <input type="text" name="sf_search" id="sf_search" value="" placeholder="Search MoJ Intranet">
+          <button type="submit">Go</button>
+        </div>
       </form>
     </div>
     <nav class="c-main-nav-bar">
-      <ul>
-        <li><a href="">Home</a></li>
+      <ul class="u-wrapper">
+        <li class="current"><a href="">Home</a></li>
         <li><a href="">News</a></li>
         <li><a href="">Events</a></li>
         <li><a href="">Guidance &amp; forms</a></li>

@@ -21,7 +21,7 @@ e.g.
 
 ```
 .u-primary-column {
-  col(1/2)
+  column(1/2)
 }
 ```
 
@@ -34,9 +34,9 @@ e.g.
 
 ```
 .u-primary-column {
-  col(1)
+  column(1)
   +above(m) {
-    col(1/2)  
+    column(1/2)  
   }
 }
 ```

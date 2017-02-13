@@ -1,0 +1,47 @@
+/*
+  @Component: Main navigation bar
+  @Creator: Alex Ward
+  @Description: Lives in the header-container component and contains the main navigation for the site
+*/
+
+.c-main-nav-bar {
+  background-color: $boxBg;
+  border-bottom: 1px solid $border;
+
+  li {
+    span(1/6);
+    margin-bottom: -1px;
+    display: inline-block;
+    border-left: 1px solid $border;
+    &:last-of-type {
+      border-right: 1px solid $border;
+    }
+    &.current {
+      background-color: $light;
+      a:hover, a:focus {
+        background-color: $light;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    padding: $spacing $spacing*2;
+    color: $text;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      background-color: darken($boxBg, 15%);
+      border-color: $border;
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: 0;
+      border-color: $border;
+    }
+  }
+}

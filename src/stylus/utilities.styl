@@ -1,0 +1,31 @@
+.u-visually-hidden {
+  // Hides elements from the page but not from a screen reader
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  color: transparent;
+}
+
+.u-skip-link {
+    position: absolute;
+    top:-80px;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background: $primary;
+    color: #fff;
+    z-index: 999999;
+    -webkit-transition: top 1s; /* For Safari 3.1 to 6.0 */
+    transition: top 1s;
+
+    &:focus {
+      top: 0;
+    }
+}
+
+.u-wrapper {
+  center(1020px);
+  position: relative;
+}

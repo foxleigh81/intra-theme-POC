@@ -1,7 +1,6 @@
 /*
 Gulpfile.js file for the tutorial:
-Using Gulp, SASS and Browser-Sync for your front end web development - DESIGNfromWITHIN
-http://designfromwithin.com/blog/gulp-sass-browser-sync-front-end-dev
+Using Gulp, Stylus and Browser-Sync for your front end web development
 
 Steps:
 
@@ -23,7 +22,7 @@ var gulp = require('gulp')
 var stylus = require('gulp-stylus')
 var uglify = require('gulp-uglify')
 var rename = require('gulp-rename')
-var notify = require('gulp-notify')
+var notify = require('gulp-notify') // Notify added for later
 var eslint = require('gulp-eslint')
 var cmq = require('gulp-merge-media-queries')
 var cssnano = require('gulp-cssnano')
@@ -99,9 +98,9 @@ gulp.task('browser-sync', function () {
 /* Watch stylus, js and html files, doing different things with each. */
 gulp.task('default', ['stylus', 'browser-sync'], function () {
   /* Watch styl, run the sass task on change. */
-  gulp.watch(['src/stylus/*.styl', 'stylus/**/*.styl'], ['stylus'])
+  gulp.watch(['src/stylus/*.styl', 'src/stylus/**/*.styl'], ['stylus'])
   /* Watch app.js file, run the scripts task on change. */
-  gulp.watch(['src/js/app.js'], ['scripts'])
+  gulp.watch(['src/js/core.js', 'src/js/**/*.js'], ['scripts'])
   /* Watch .html files, run the bs-reload task on change. */
   gulp.watch(['*.html'], ['bs-reload'])
 })
