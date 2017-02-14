@@ -1,0 +1,53 @@
+.c-news-item {
+  padding-bottom: $spacing;
+  border-bottom: 1px solid $border;
+  margin-bottom: $spacing;
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    ff-title();
+  }
+
+  &--excerpt {
+    p {
+      color: $text;
+      font-size: $smallCopy;
+      line-height: $lineHeight*1.4;
+      margin-bottom: 0;
+    }
+  }
+  &--dateline {
+    font-size: $smallCopy;
+    color: $border;
+  }
+
+/*
+  PARENT OVERRIDES
+*/
+
+  .c-featured-news-list & {
+    +above(m) {
+      column(1/2, $cycle: 2);
+    }
+  }
+
+  .c-news-list & {
+    clearfix();
+    +above(m) {
+      column(1/2, $cycle: 2);
+    }
+    img {
+      column(1/3);
+    }
+    &--excerpt {
+      display: none;
+    }
+  }
+
+}

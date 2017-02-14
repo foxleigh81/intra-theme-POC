@@ -1,10 +1,18 @@
 // the 'main' layout
 
 main {
+  padding: $spacing;
+  +above(l) {
+    padding: 0;
+  }
   .l-primary {
-    column(2/3);
+    +above(m) {
+      column(2/3);
+    }
   }
   .l-secondary {
-    column(1/3);
+    +above(m) {
+      column(1/3);
+    }
   }
 }

@@ -1,0 +1,33 @@
+/*
+  @Component: Blog item
+  @Creator: Alex Ward
+  @Description: Can live in multiple places. By default it extends the .c-news-item component.
+  @Note: Has parent overrides.
+*/
+
+.c-blog-item {
+  @extend .c-news-item;
+
+  /*
+    PARENT OVERRIDES
+  */
+    .c-blog-summary & {
+      clearfix();
+      h1 {
+        font-size: $outerCore;
+      }
+      img {
+        column(1/4);
+      }
+      &--excerpt {
+        display: none;
+      }
+      &--byline {
+        @extend .c-blog-item--dateline;
+        &:before {
+          content: "|";
+          padding: 0 $spacing;
+        }
+      }
+    }
+}

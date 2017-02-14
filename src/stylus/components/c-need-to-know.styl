@@ -1,0 +1,32 @@
+.c-need-to-know {
+  clearfix();
+  clear:both;
+  &--slide {
+    clearfix();
+    clear:both;
+    background-color: $primary;
+    /.no-js & {
+      margin-bottom: $spacing;
+    }
+    a {
+      text-decoration: none;
+    }
+    img, div {
+      +above(m) {
+        span(1/2);
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    div {
+      padding: $spacing*3;
+      p, a, span, li {
+        color: $light;
+        font-size: $mantle;
+        font-weight: bold;
+        line-height: $lineHeight*1.2;
+      }
+    }
+  }
+}
