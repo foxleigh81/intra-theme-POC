@@ -29,3 +29,37 @@
   center(1020px);
   position: relative;
 }
+
+.u-message {
+  @extend .u-wrapper;
+  text-align: center;
+  padding: $spacing;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    a {
+      color: $dark;
+    }
+  }
+  &__success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    a {
+      color: $dark;
+    }
+  }
+  &__error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    a {
+      color: $dark;
+    }
+  }
+}

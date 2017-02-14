@@ -8,8 +8,7 @@
 
 ## Coding guidelines
 
-The template is built using the 'everything is a component or utility' school of thought. If it exists on the page as a group of HTML tags then it's a component and must have a class starting with 'c-' (e.g. `.c-news-item`). If it is a class used to alter the appearance or behaviour of a component then it is a utility and must begin with 'u-' (e.g. `.u-visually-hidden`).
-
+The template is built using the 'everything is a component, a layout or a utility' school of thought. If it exists on the page as one or more HTML tags then it's probably a component and must have a class starting with 'c-' (e.g. `.c-news-item`). If it is a class used to alter the appearance or behaviour of a component then it is a utility and must begin with 'u-' (e.g. `.u-visually-hidden`) and lastly if it is an element specifically to alter the layout of a page then it must begin with 'l-' (e.g. `.l-primary`).
 
 ### Stylus
 The CSS is created using the stylus preprocessor and uses standard SASS syntax (the docs show python syntax but it's not used here), there are a few minor differences between sass and stylus, they are available to read in the [official stylus documentation](http://stylus-lang.com/).
