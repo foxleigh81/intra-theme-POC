@@ -79,14 +79,18 @@
   border: 1px solid $border;
 }
 
+// By default the icon will appear in :before unless you add .u-icon__after to the class list
+
 .u-icon {
   clearfix();
-  &__before {
-    &:before {
-      @extend ._icon_;
-    }
+  &:before {
+    @extend ._icon_;
   }
+
   &__after {
+    &:before {
+      display: none;
+    }
     &:after {
       @extend ._icon_;
     }
