@@ -67,6 +67,29 @@
 }
 
 // Uses the 'add icon' mixin to add an icon to the page
+
+// Never use this, it's for an @extend only
+._icon_ {
+  content: "i";
+  float:left;
+  text-align: center;
+  width: $spacing*3.2;
+  height: $spacing*3.2;
+  margin-right: $spacing;
+  border: 1px solid $border;
+}
+
 .u-icon {
-  // nothing here yet
+  clearfix();
+  &__before {
+    &:before {
+      @extend ._icon_;
+    }
+  }
+  &__after {
+    &:after {
+      @extend ._icon_;
+    }
+  }
+
 }
