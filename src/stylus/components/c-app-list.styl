@@ -1,0 +1,30 @@
+.c-app-list {
+  clearfix();
+  margin-bottom: $spacing;
+  li {
+    column(1/2, $cycle: 2);
+    margin-bottom: $spacing;
+    line-height: 1.6;
+    &.u-icon {
+      &:before {
+        content: "i";
+        float:left;
+        text-align: center;
+        width: $spacing*3.2;
+        height: $spacing*3.2;
+        margin-right: $spacing;
+        border: 1px solid $border;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    font-size: $smallCopy;
+    line-height: $lineHeight;
+    height: 100%;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
