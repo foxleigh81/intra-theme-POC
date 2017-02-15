@@ -16,3 +16,21 @@ main {
     }
   }
 }
+
+// The 'footer' layout
+.c-footer {
+  .l-primary {
+    padding: $spacing*2;
+    +above(m) {
+      padding: $spacing*3;
+      column(4/5);
+    }
+  }
+  .l-secondary {
+    +above(m) {
+      padding: $spacing*2;
+      column(1/5);
+      padding: $spacing*3 0;
+    }
+  }
+}

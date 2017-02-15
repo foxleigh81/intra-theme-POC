@@ -1,0 +1,15 @@
+.c-report-problem-link {
+  display: block;
+  text-align: center;
+  margin-bottom: $spacing;
+  +above(m) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  &:before {
+    // replace with icon mixin
+    display: inline-block;
+    margin-right: 3px;
+    content: "▼";
+  }
+}
