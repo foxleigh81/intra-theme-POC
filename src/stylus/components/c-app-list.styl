@@ -1,19 +1,21 @@
 .c-app-list {
   clearfix();
   margin-bottom: $spacing;
-  display: table;
-  width: 100%;
+
   li {
     column(1/2, $cycle: 2);
     margin-bottom: $spacing;
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
   }
   a {
+    display: block;
     text-decoration: none;
     font-size: $smallCopy;
     line-height: $lineHeight;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 70%;
+    }
     &:hover {
       text-decoration: underline;
     }
